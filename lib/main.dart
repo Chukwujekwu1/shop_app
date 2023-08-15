@@ -10,9 +10,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData( fontFamily: "lato"),
+      theme: ThemeData(
+        fontFamily: "lato",
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromRGBO(254, 206, 1, 1),
+          primary: const Color.fromRGBO(254, 206, 1, 1),
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          hintStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          ),
+          prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
+        ),
+      ),
       title: "Shopping App",
       home: HomePage(),
     );
