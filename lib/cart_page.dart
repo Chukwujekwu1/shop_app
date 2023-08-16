@@ -18,6 +18,11 @@ class CartPage extends StatelessWidget {
           return ListTile(
             leading: CircleAvatar(
               backgroundImage: AssetImage(cartItem['imageUrl'] as String),
+              radius: 30,
+            ),
+            trailing: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.delete, color: Colors.red,),
             ),
             title: Text(
               cartItem['title'].toString(),

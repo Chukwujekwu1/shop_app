@@ -70,7 +70,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             ),
                             backgroundColor: selectedSize == size
                                 ? Theme.of(context).colorScheme.primary
-                                : null,
+                                : const Color.fromRGBO(245, 247, 249, 1),
                           ),
                         ),
                       );
